@@ -25,13 +25,13 @@ A **software-only simulation** of a basic EEG analysis pipeline: it generates *s
 
 ```bash
 pip install -r requirements.txt     # numpy (+ opencv for the PNG)
-python -m unittest                  # 12 tests
+python -m unittest                  # 10 tests
 python -m nervegear.simulate --scenarios relaxed focused drowsy --seed 1 --out out
 ```
 
 ## Verified
 
-- ✅ 12 unit tests: reproducibility, a pure 10 Hz sine lands in alpha, a 20 Hz sine in beta, relative powers sum to 1, engagement ordering, each scenario recognised for 10 random seeds, dashboard file is written.
+- ✅ 10 unit tests: reproducibility, a pure 10 Hz sine lands in alpha, a 20 Hz sine in beta, relative powers sum to 1, engagement ordering, each scenario recognised for 10 random seeds, dashboard file is written.
 - ✅ Demo run shown above (the image is that actual output).
 - ⛔ Not validated on any real EEG recording.
 
